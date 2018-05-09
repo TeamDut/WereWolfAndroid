@@ -1,7 +1,9 @@
-package com.teamdut.werewolfandroid1;
+package com.teamdut.werewolfandroid1.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.teamdut.werewolfandroid1.R;
 
 public class MainActivity extends AppCompatActivity {
 
