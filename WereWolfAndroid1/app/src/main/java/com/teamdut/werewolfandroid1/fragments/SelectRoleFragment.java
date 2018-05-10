@@ -1,5 +1,6 @@
 package com.teamdut.werewolfandroid1.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -85,6 +86,9 @@ public class SelectRoleFragment extends BaseFragment implements View.OnClickList
             case R.id.btn_back:
                 break;
             case R.id.btn_start:
+                Intent i = new Intent(Constant.BC_START);
+                getActivity().sendBroadcast(i);
+
                 startActivity(PlayingActivity.class);
                 break;
         }

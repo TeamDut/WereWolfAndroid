@@ -6,6 +6,25 @@
     <com.yarolegovich.discretescrollview.DiscreteScrollView
         android:id="@+id/list_card"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"></com.yarolegovich.discretescrollview.DiscreteScrollView>
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"></com.yarolegovich.discretescrollview.DiscreteScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_above="@+id/list_playing_player"
+            android:background="@drawable/shadow"></View>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list_playing_player"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
 
 </RelativeLayout>

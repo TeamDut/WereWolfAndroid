@@ -1,6 +1,9 @@
 package com.teamdut.werewolfandroid1.models;
 
-public class Player {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class Player{
     private int id;
     private int roleId = 0;
     private String name;
